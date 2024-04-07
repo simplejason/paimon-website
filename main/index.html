@@ -35,161 +35,144 @@ under the License.
   </head>
   <body class="d-flex flex-column min-vh-100">
 
-    <!-- template: nav -->
+  <!-- template: nav -->
 
-    <section class="hero-banner position-relative d-flex align-items-center">
+  <section id="intro" class="hero-banner h-full w-full position-relative d-flex align-items-center justify-content-center">
       <div class="bg"></div>
-      <div class="container position-relative">
-        <div class="py-xs-2 py-sm-3 py-md-4 py-xxl-5">
-          <div class="row py-5">
-            <div class="col-xl-7 col-lg-9">
-              <h1 class="fw-bold lh-1 pb-5 hero-title" style="color: #ffffff;">Apache Paimon&trade;</h1>
-              <p class="lead pb-5 fs-4" style="color: #ffffff;">A lake format that enables building a Realtime Lakehouse Architecture with Flink and Spark for both streaming and batch operations. Innovatively combines lake format and LSM structure, bringing realtime streaming updates into the lake architecture.</p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a role="button" class="btn btn-info btn-lg dropdown-toggle px-5 m-1" href="#" role="button" id="getStartedLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Get Started
-                </a>
-                <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="getStartedLink">
-                  <a class="dropdown-item" href="https://paimon.apache.org/docs/master/flink/quick-start/">Flink</a>
-                  <a class="dropdown-item" href="https://paimon.apache.org/docs/master/spark/quick-start/">Spark</a>
-                  <a class="dropdown-item" href="https://paimon.apache.org/docs/master/engines/hive/">Hive</a>
-                  <a class="dropdown-item" href="https://paimon.apache.org/docs/master/engines/presto/">Presto</a>
-                  <a class="dropdown-item" href="https://paimon.apache.org/docs/master/engines/trino/">Trino</a>
+      <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-12 d-flex flex-column justify-content-center text-center text-xl-start py-4">
+                    <h1 class="text-white hero-title mb-5">Apache Paimon&trade;</h1>
+                    <p class="fw-normal fs-5 mb-4 pb-0 text-white">A lake format that enables building a Realtime Lakehouse Architecture with Flink and Spark for both streaming and batch operations. Innovatively combines lake format and LSM structure, bringing realtime streaming updates into the lake architecture.</p>
+                    <div class="mb-4 d-flex justify-content-center justify-content-xl-start">
+                        <div class="dropdown">
+                            <a role="button" class="custom-link nav-link dropdown-toggle rounded-pill me-2" id="guidesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Quick Start</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="guidesDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="https://paimon.apache.org/docs/master/flink/quick-start/">Flink</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://paimon.apache.org/docs/master/spark/quick-start/">Spark</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://paimon.apache.org/docs/master/engines/hive/">Hive</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://paimon.apache.org/docs/master/engines/presto/">Presto</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://paimon.apache.org/docs/master/engines/trino/">Trino</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a role="button" class="custom-link nav-link rounded-pill ms-2 text-nowrap" href="https://github.com/apache/paimon/">Source Code</a>
+                    </div>
                 </div>
-                <a role="button" class="btn btn-info btn-lg px-5 m-1" href="https://github.com/apache/paimon/">Source Code</a>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
+    <section id="next" class="d-flex flex-column align-items-center justify-content-center">
+        <div class="container my-5 py-2">
+            <div class="row justify-content-center">
+                <h2 class="text-center pb-5">One Storage for All Your Data</h2>
+                <div class="col-md-12 col-lg-10 text-center mx-auto">
+                    <img class="w-full" src="assets/architecture.png" alt="One Storage for All Your Data" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container my-5 py-2 px-4 px-md-0">
+            <div class="row">
+                <h2 class="text-center pb-5">Key Features</h2>
+                <div class="mb-4 col-lg-4">
+                    <div class="key-card text-center bg-white py-4 px-4">
+                        <div class="fs-1 mb-4 icon">
+                            <i class="bi bi-terminal"></i>
+                        </div>
+                        <h3 class="mb-4 fs-6 text-uppercase">Real-time Updates</h3>
+                        <p class="fw-normal">Primary-key table supports real-time streaming updates of large amounts of data. Real-time query within 1 minute.</p>
+                    </div>
+                </div>
+                <div class="mb-4 col-lg-4">
+                    <div class="key-card text-center bg-white py-4 px-4">
+                        <div class="fs-1 mb-4 icon">
+                            <i class="bi bi-calculator"></i>
+                        </div>
+                        <h3 class="mb-4 fs-6 text-uppercase">Flexible Updates</h3>
+                        <p class="fw-normal">Defining Merge Engines, update records however you like. Deduplicate to keep last row, or partial-update, or aggregate records, or first-row, you decide.</p>
+                    </div>
+                </div>
+                <div class="mb-4 col-lg-4">
+                    <div class="key-card text-center bg-white py-4 px-4">
+                        <div class="fs-1 mb-4 icon">
+                            <i class="bi bi-clipboard2-pulse"></i>
+                        </div>
+                        <h3 class="mb-4 fs-6 text-uppercase">Change-tracking Updates</h3>
+                        <p class="fw-normal">Defining changelog-producer, produce correct and complete changelog in updates for merge engines, simplifying your streaming analytics.</p>
+                    </div>
+                </div>
+                <div class="mb-4 col-lg-4">
+                    <div class="key-card text-center bg-white py-4 px-4">
+                        <div class="fs-1 mb-4 icon">
+                            <i class="bi bi-table"></i>
+                        </div>
+                        <h3 class="mb-4 fs-6 text-uppercase">Append Data Processing</h3>
+                        <p class="fw-normal">Append table (no primary-key) provides large scale batch and streaming processing capability. Supports compaction with z-order sorting.</p>
+                    </div>
+                </div>
+                <div class="mb-4 col-lg-4">
+                    <div class="key-card text-center bg-white py-4 px-4">
+                        <div class="fs-1 mb-4 icon">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <h3 class="mb-4 fs-6 text-uppercase">Query Data Skipping</h3>
+                        <p class="fw-normal">Based on indexes such as minmax, filter irrelevant files and provide high-performance queries, more indexes are being supported.</p>
+                    </div>
+                </div>
+                <div class="mb-4 col-lg-4">
+                    <div class="key-card text-center bg-white py-4 px-4">
+                        <div class="fs-1 mb-4 icon">
+                            <i class="bi bi-device-hdd"></i>
+                        </div>
+                        <h3 class="mb-4 fs-6 text-uppercase">Data Lake Capabilities</h3>
+                        <p class="fw-normal">Low cost, High reliability, Scalable metadata, Time Travel and Full Schema Evolution. All advantage as a data lake storage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="bg-white">
-      <div class="container py-5">
-        <div class="row py-3 m-1">
-          <div class="col-12 text-center pb-3"><h2>One Storage for All Your Data</h2></div>
-          <div class="col-md-12 col-lg-10 text-center mx-auto"><img src="assets/architecture.png" width="100%" style="filter: brightness(105%)" /></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-light">
-      <div class="container py-5">
-        <div class="row py-3">
-          <div class="col-12 text-center"><h2>Key Features</h2></div>
-        </div>
-        <div class="row py-4 justify-content-center m-1">
-          <div class="card shadow col-md-10 col-lg-5 col-xl-3 m-3">
-            <div class="card-body">
-              <div class="text-center text-primary">
-                <h2><i class="bi bi-shuffle"></i></h2>
-                <h5>Real-time Updates</h5>
-              </div>
-              <div class="py-3">Primary-key table supports real-time streaming updates of large amounts of data. Real-time query within 1 minute.</div>
-            </div>
-          </div>
-          <div class="card shadow col-md-10 col-lg-5 col-xl-3 m-3">
-            <div class="card-body">
-              <div class="text-center text-primary">
-                <h2><i class="bi bi-calculator"></i></h2>
-                <h5>Flexible Updates</h5>
-              </div>
-              <div class="py-3">Defining Merge Engines, update records however you like. Deduplicate to keep last row, or partial-update, or aggregate records, or first-row, you decide.</div>
-            </div>
-          </div>
-          <div class="card shadow col-md-10 col-lg-5 col-xl-3 m-3">
-            <div class="card-body">
-              <div class="text-center text-primary">
-                <h2><i class="bi bi-clipboard2-pulse"></i></h2>
-                <h5>Change-tracking Updates</h5>
-              </div>
-              <div class="py-3">Defining changelog-producer, produce correct and complete changelog in updates for merge engines, simplifying your streaming analytics.</div>
-            </div>
-          </div>
-          <div class="card shadow col-md-10 col-lg-5 col-xl-3 m-3">
-            <div class="card-body">
-              <div class="text-center text-primary">
-                <h2><i class="bi bi-table"></i></h2>
-                <h5>Append Data Processing</h5>
-              </div>
-              <div class="py-3">Append table (no primary-key) provides large scale batch and streaming processing capability. Supports compaction with z-order sorting.</div>
-            </div>
-          </div>
-          <div class="card shadow col-md-10 col-lg-5 col-xl-3 m-3">
-            <div class="card-body">
-              <div class="text-center text-primary">
-                <h2><i class="bi bi-calendar-event"></i></h2>
-                <h5>Query Data Skipping</h5>
-              </div>
-              <div class="py-3">Based on indexes such as minmax, filter irrelevant files and provide high-performance queries, more indexes are being supported.</div>
-            </div>
-          </div>
-          <div class="card shadow col-md-10 col-lg-5 col-xl-3 m-3">
-            <div class="card-body">
-              <div class="text-center text-primary">
-                <h2><i class="bi bi-clipboard2-pulse"></i></h2>
-                <h5>Data Lake Capabilities</h5>
-              </div>
-              <div class="py-3">Low cost, High reliability, Scalable metadata, Time Travel and Full Schema Evolution. All advantage as a data lake storage.</div>
-            </div>
-          </div>
-        </div>
-        <div class="row pb-3"></div>
-      </div>
-    </section>
-
-    <section style="background-color: #ddeeff">
-      <div class="container py-5">
-        <div class="row py-3">
-          <div class="col-12 text-center"><h2>Join the Community</h2></div>
-        </div>
-        <div class="row py-4 justify-content-center m-1">
-          <div class="card border-primary col-md-10 col-xl-3 m-3" style="background-color: #ddeeff">
-            <a class="community-anchor" href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,fJQRBU8+v01pdCtcy+G9YJ38RaCV5RVmrrOblhUlQP4=&_dt_no_comment=1&origin=11">
-              <div class="card-body">
-                <div class="row d-flex align-items-center">
-                  <div class="col-2 align-self-center text-center text-primary">
-                    <h1><i class="bi bi-chat"></i></h1>
-                  </div>
-                  <div class="col-10">
-                    <h4 class="card-title text-center text-primary">DingTalk Group</h4>
-                  </div>
+        <div class="container my-5 py-2 px-4 px-md-0">
+            <div class="row">
+                <h2 class="text-center pb-5">Join the Community</h2>
+                <div class="col-md-4 text-center">
+                    <a class="community-anchor" href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,fJQRBU8+v01pdCtcy+G9YJ38RaCV5RVmrrOblhUlQP4=&_dt_no_comment=1&origin=11">
+                        <span class="d-block h2 text-primary">
+                            <i class="bi bi-chat"></i>
+                        </span>
+                        <span>DingTalk Group</span>
+                    </a>
                 </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="card border-primary col-md-10 col-xl-3 m-3" style="background-color: #ddeeff">
-            <a class="community-anchor" href="https://github.com/apache/paimon#mailing-lists">
-              <div class="card-body">
-                <div class="row d-flex align-items-center">
-                  <div class="col-2 align-self-center text-center text-primary">
-                    <h1><i class="bi bi-envelope-open"></i></h1>
-                  </div>
-                  <div class="col-10">
-                    <h4 class="card-title text-center text-primary">Mailing List</h4>
-                  </div>
+                <div class="col-md-4 text-center">
+                    <a class="community-anchor mail-list" href="https://github.com/apache/paimon#mailing-lists">
+                        <span class="d-block h2 text-primary">
+                            <i class="bi bi-envelope-open"></i>
+                        </span>
+                        <span>Mailing List</span>
+                    </a>
                 </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="card border-primary col-md-10 col-xl-3 m-3" style="background-color: #ddeeff">
-            <a class="community-anchor" href="https://github.com/apache/paimon/issues">
-              <div class="card-body">
-                <div class="row d-flex align-items-center">
-                  <div class="col-2 align-self-center text-center text-primary">
-                    <h1><i class="bi bi-clipboard-check"></i></h1>
-                  </div>
-                  <div class="col-10">
-                    <h4 class="card-title text-center text-primary">Issue Tracking</h4>
-                  </div>
+                <div class="col-md-4 text-center">
+                    <a class="community-anchor" href="https://github.com/apache/paimon/issues">
+                        <span class="d-block h2 text-primary">
+                            <i class="bi bi-clipboard-check"></i>
+                        </span>
+                        <span>Issue Tracking</span>
+                    </a>
                 </div>
-              </div>
-            </a>
-          </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- template: footer -->
@@ -197,65 +180,148 @@ under the License.
     <!-- Bootstrap JS -->
     <script src="lib/bootstrap@5.1.3/bootstrap.bundle.min.js"></script>
   </body>
-
   <style>
-  .hero-banner {
-    height: 720px;
-    background-color: rgb(0, 1, 25);
-  }
+      #intro {
+          background-color: rgb(2, 3, 29);
+          position: relative;
+          min-height: 400px;
+          height: calc(100vh - 80px);
+          overflow: hidden;
+      }
 
-  .hero-banner > .bg {
-    background: no-repeat right center;
-    background-image: linear-gradient(to right, rgba(0, 1, 25, 1) 0%, rgba(0, 1, 25, 0) 10%), url(assets/hero.jpg);
-    background-size: 1000px 720px;
-    height: 720px;
-    top: 0;
-    position: absolute;
-    right: 0;
-    width: 100%;
-  }
+      .hero-banner .bg {
+          background: no-repeat right center;
+          background-image: linear-gradient(to right, rgba(0, 1, 25, 1) 0%, rgba(0, 1, 25, 0) 10%), url(assets/hero.jpg);
+          background-size: 1000px 720px;
+          height: 100%;
+          top: 0;
+          position: absolute;
+          right: 0;
+          width: 100%;
+      }
 
-  @media (max-width: 575px) {
-    .hero-title {
-      font-size: 2.5em;
-    }
 
-    .hero-banner > .bg {
-      opacity: 0.3;
-      background-position-x: center;
-    }
-  }
+      @media (max-width: 575px) {
+          .hero-title {
+              font-size: 2.5em;
+          }
 
-  @media (min-width: 576px) and (max-width: 991px) {
-    .hero-title {
-      font-size: 3em;
-    }
+          .hero-banner > .bg {
+              opacity: 0.3;
+              background-position-x: center;
+          }
+      }
 
-    .hero-banner > .bg {
-      opacity: 0.3;
-      background-position-x: center;
-    }
-  }
+      @media (min-width: 576px) and (max-width: 991px) {
+          .hero-title {
+              font-size: 3em;
+          }
 
-  @media (min-width: 992px) and (max-width: 1399px) {
-    .hero-title {
-      font-size: 3em;
-    }
+          .hero-banner > .bg {
+              opacity: 0.3;
+              background-position-x: center;
+          }
+      }
 
-    .hero-banner > .bg {
-      opacity: 0.5;
-    }
-  }
+      @media (min-width: 992px) and (max-width: 1399px) {
+          .hero-title {
+              font-size: 3em;
+          }
 
-  @media (min-width: 1400px) {
-    .hero-title {
-      font-size: 4em;
-    }
-  }
+          .hero-banner > .bg {
+              opacity: 0.5;
+          }
+      }
 
-  .community-anchor {
-    text-decoration: inherit;
-    color: inherit;
-  }
+      @media (min-width: 1400px) {
+          .hero-title {
+              font-size: 4em;
+          }
+      }
+
+      .container {
+          z-index: 999;
+      }
+
+      .custom-link {
+          letter-spacing: 1px;
+          display: inline-block;
+          padding: 12px 32px;
+          transition: 0.5s;
+          line-height: 1;
+          color: #fff;
+          animation-delay: 0.8s;
+          border: 2px solid #0e87ff;
+          text-decoration: none;
+          background-color: #0e87ff;
+      }
+
+      .custom-link:hover {
+          background: #226de4;
+          border-color: #226de4;
+          color: #fff;
+      }
+
+      .custom-link.dropdown-toggle:after {
+          margin-left: .5rem;
+      }
+
+      #intro .dropdown-item:active {
+          background-color: #226de4 !important;
+      }
+
+      #intro .btn {
+          padding: 10px 24px;
+      }
+
+      .key-card {
+          min-height: 300px;
+          box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+          transition: all 0.3s ease-in-out;
+          border-radius: 10px;
+          margin: 0 10px 10px 10px;
+      }
+
+      .key-card:hover {
+          transform: scale(1.05);
+      }
+
+      .key-card .icon {
+          margin: auto;
+          text-align: center;
+          border-radius: 50%;
+          width: 70px;
+          height: 70px;
+          background: #f4f5f7;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .h-full {
+          height: 100%;
+      }
+      .w-full {
+          width: 100%;
+      }
+
+      .community-anchor {
+          display: block;
+          text-decoration: inherit;
+          color: inherit;
+          margin-bottom: 24px;
+      }
+
+      @media (min-width: 768px) {
+          .community-anchor.mail-list {
+              border-left: 1px solid #dddddd;
+              border-right: 1px solid #dddddd;
+          }
+      }
+
+      /*nav styles*/
+      nav.navbar {
+          min-height: 80px;
+      }
   </style>
 </html>

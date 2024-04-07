@@ -32,6 +32,32 @@ under the License.
     <link rel="icon" type="image/x-icon" href="assets/paimon.svg">
 
     <title>Apache Paimon&trade;</title>
+    <style>
+      #user-imgs-row {
+        border-top: 1px solid #e0e5fa;
+        border-left: 1px solid #e0e5fa;
+      }
+
+      .user-logo {
+        border-right: 1px solid #e0e5fa;
+        border-bottom: 1px solid #e0e5fa;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.5);
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+      }
+
+      #user-imgs-row .user-logo img {
+        transition: all 0.4s ease-in-out;
+      }
+
+      #user-imgs-row .user-logo:hover img {
+        transform: scale(1.2);
+      }
+    </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
 
@@ -49,7 +75,7 @@ under the License.
           </p>
         </div>
       </div>
-      <div id="user-imgs-row" class="row d-flex align-items-center pb-5">
+      <div id="user-imgs-row" class="row d-flex align-items-center mb-5">
       </div>
     </div>
 
@@ -88,8 +114,8 @@ under the License.
       const userImgsRow = document.getElementById('user-imgs-row');
       for (let userImg of userImgs) {
         const div = document.createElement('div');
-        div.classList.add('col-6', 'col-md-4', 'col-lg-3', 'col-xl-2', 'py-1', 'text-center');
-        div.innerHTML = `<img src="assets/users/${userImg}" style="max-width: 100%" />`;
+        div.classList.add('col-6', 'col-md-4', 'col-lg-3', 'col-xl-2', 'py-1', 'text-center', 'user-logo');
+        div.innerHTML = `<img src="assets/users/${userImg}" style="max-width: 100%" alt="" />`;
         userImgsRow.appendChild(div);
       }
     </script>
